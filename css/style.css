@@ -1367,6 +1367,9 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        position: relative;
+    }
     .header_container {
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
                 clip-path: polygon(0 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
@@ -1377,6 +1380,39 @@ body {
 
     .navigation {
         display: none;
+    }
+
+    .burger_menu {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color:rgba(255, 255, 255, 1);
+        z-index: 2;
+        display: none;
+    }
+
+    .burger_menu .nav_list {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        padding-top: 100px;
+        
+    }
+
+    .burger_menu .nav_link {
+        color: rgba(0, 0, 0, 1);
+        font-size: 25px;
+        font-weight: 700;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    .visible_mobile {
+        display: block;
+    }
+
+    .over {
+        overflow: hidden;
     }
 
     .burger {
@@ -1411,6 +1447,7 @@ body {
         -webkit-transition: 0.2s;
         -o-transition: 0.2s;
         transition: 0.2s;
+        background-color: rgba(0, 0, 0, 1);
     }
 
     .burger::after {
@@ -1431,6 +1468,17 @@ body {
         -o-transition: 0.5s;
         transition: 0.5s;
     }
+
+    .burger::after,
+    .burger::before {
+        content:'';
+        background-color: rgba(255, 255, 255, 1);
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+    }
+    
     .burger_active::after {
         -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
@@ -1439,6 +1487,7 @@ body {
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         transition: 0.5s;
+        background-color: rgba(0, 0, 0, 1);
     }
     
     .burger_active::before {
@@ -1449,16 +1498,11 @@ body {
         -webkit-transition: 0.5s;
         -o-transition: 0.5s;
         transition: 0.5s;
+        background-color: rgba(0, 0, 0, 1); 
     }
 
-    .burger::after,
-    .burger::before {
-        content:'';
-        background-color:  rgb(255, 255, 255);
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        left: 0;
+    .burger_black {
+        background-color: rgba(0, 0, 0, 1);
     }
 
     .slider_row {
