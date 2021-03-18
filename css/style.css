@@ -315,6 +315,9 @@ body {
     color: #7050e5;
     position: relative;
 }
+.burger_menu {
+    display: none;
+}
 
 .header_container {
     background-color: #7050e5;
