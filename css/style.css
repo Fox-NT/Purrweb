@@ -309,7 +309,7 @@ hr {
 /* style index.html */
 body {
     background-color: rgba(255, 255, 255, 1);
-    font-family: "Proxima Nova";
+    font-family: "Proxima Nova", Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
     color: #7050e5;
@@ -1129,14 +1129,14 @@ body {
 
 .twitter_link {
     color: #f7f7f7;
-    font-family: "Myriad Pro";
+    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 400;
 }
 
 .twitter_feed {
     color: #f7f7f7;
-    font-family: "Myriad Pro";
+    font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
@@ -1225,7 +1225,7 @@ body {
     text-align: center;
     padding: 10px;
     color: #9b9b9b;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     font-size: 10px;
     font-weight: 400;
     text-transform: uppercase;
