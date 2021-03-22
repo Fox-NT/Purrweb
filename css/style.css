@@ -387,21 +387,24 @@ body {
 
 .nav_link::after {
     content: '';
-    display: none;
+    display: block;
+    transform: scaleX(0);
     position: absolute;
     bottom: -9px;
     left: -5px;
     right: -5px;
     height: 3px;
     background: #ff8b00;
+    transition: 0.2s all linear;
 }
 
 .nav_link:hover::after {
-    display: block;
+    transform: scaleX(1);
+    transition: 0.2s all linear;
 }
 
 .current_link::after {
-    display: block;
+    transform: scaleX(1);
 }
 
 .header_slider {
